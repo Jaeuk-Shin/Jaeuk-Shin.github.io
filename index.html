@@ -18,9 +18,9 @@
     <table style="width:100%;max-width:min(1200px, 92vw);border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="biotable" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td class="biocell" style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Jaeuk Shin
                 </p>
@@ -41,7 +41,7 @@
                   <a href="https://github.com/Jaeuk-Shin"><i class="fa-brands fa-github"></i> Github</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
+              <td class="photocell" style="padding:2.5%;width:37%;max-width:37%">
                 <a href="images/shin.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 20%;" alt="profile photo" src="images/shin.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
@@ -103,7 +103,6 @@
         <div class="cell-inner">
           <div>
 			      <span class="papertitle">Egocentric Conformal Prediction for Safe and Efficient Navigation in Dynamic Cluttered Environments</span>
-        </a>
         <br>
         <strong>Jaeuk Shin</strong>, Jungjin Lee, Insoon Yang
 				<br>
@@ -140,7 +139,6 @@
         <div class="cell-inner">
           <div>
 			    <span class="papertitle">On task-relevant loss functions in meta-reinforcement learning</span>
-        </a>
         <br>
         <strong>Jaeuk Shin</strong>, Giho Kim, Howon Lee, Joonho Han, Insoon Yang
 				<br>
@@ -173,10 +171,10 @@
           </video>
         </div>
       </td>
-      <td class="text-cell">
-			<span class="papertitle">Multiparametric Analysis of Multi-Task Markov Decision Processes: Structure, Invariance, and Reducibility
-
-</span>
+      <td class="textcell">
+        <div class="cell-inner">
+          <div>
+			<span class="papertitle">Multiparametric Analysis of Multi-Task Markov Decision Processes: Structure, Invariance, and Reducibility</span>
         <br>
         <strong>Jaeuk Shin</strong>, Insoon Yang
 				<br>
@@ -185,7 +183,10 @@
         <a href="https://ieeexplore.ieee.org/abstract/document/10540067"><i class="fa-solid fa-file-lines"></i> Paper</a>
         <p></p>
         <p>
-				We present a geometric perspective on understanding multi-task Markov decision processes. The resulting structure of the task space provides a unifying view of reward shaping and task identification, enabling us to address questions arising in zero-shot learning.      </p>
+				We present a geometric perspective on understanding multi-task Markov decision processes. The resulting structure of the task space provides a unifying view of reward shaping and task identification, enabling us to address questions arising in zero-shot learning.
+        </p>
+          </div>
+        </div>
       </td>
     </tr>
 
@@ -229,9 +230,7 @@
       <td class="textcell">
         <div class="cell-inner">
           <div>
-			      <span class="papertitle">Control of fab lifters via deep reinforcement learning: A semi-MDP approach
-</span>
-            </a>
+			      <span class="papertitle">Control of fab lifters via deep reinforcement learning: A semi-MDP approach</span>
             <br>
             Giho Kim*, <strong>Jaeuk Shin*</strong>, Gihun Kim, Joonrak Kim, Insoon Yang
             <br>
@@ -263,23 +262,10 @@
           </video>
         </div>
       </td>
- 
-        </div>
-
-        <script>
-          function radmesh_show() {
-            document.getElementById('radmesh_video').style.opacity = "1";
-          }
-          function radmesh_hide() {
-            document.getElementById('radmesh_video').style.opacity = "0";
-          }
-        </script>
-      </td>
-      <td class="text-cell">
-			<span class="papertitle">Infusing model predictive control into meta-reinforcement learning for mobile robots in dynamic environments
-
-</span>
-        </a>
+      <td class="textcell">
+        <div class="cell-inner">
+          <div>
+			<span class="papertitle">Infusing model predictive control into meta-reinforcement learning for mobile robots in dynamic environments</span>
         <br>
         <strong>Jaeuk Shin</strong>, <a href="https://astghikhakobyan.github.io/">Astghik Hakobyan</a>, <a href="https://mingyupark.xyz/">Mingyu Park</a>, <a href="https://sites.google.com/view/yeoneung527/home">Yeoneung Kim</a>, Gihun Kim, Insoon Yang
 				<br>
@@ -292,6 +278,8 @@
         <p>
         We present MPC-PEARL, a novel meta-RL scheme that leverages MPC to rapidly generate faithful yet complex local behaviors during training. This compensates for the slow initial learning of meta-RL algorithms, while its myopic tendency can be addressed through RL.
 				</p>
+          </div>
+        </div>
       </td>
     </tr>
 
@@ -309,11 +297,10 @@
           </video>
         </div>
       </td>
-      <td class="text-cell">
-			<span class="papertitle">Hamilton-jacobi deep Q-learning for deterministic continuous-time systems with lipschitz continuous controls
-
-</span>
-        </a>
+      <td class="textcell">
+        <div class="cell-inner">
+          <div>
+			<span class="papertitle">Hamilton-jacobi deep Q-learning for deterministic continuous-time systems with lipschitz continuous controls</span>
         <br>
         <a href="https://sites.google.com/view/jeongho-kim">Jeongho Kim</a>, <strong>Jaeuk Shin</strong>, Insoon Yang
 				<br>
@@ -326,6 +313,8 @@
         <p>
 				Starting from continuous-time HJB equations, we derive HJDQN, a continuous-time Q-learning method. This eliminates the need for a separate actor module and ensures smooth action trajectories.
         </p>
+          </div>
+        </div>
       </td>
     </tr>
 

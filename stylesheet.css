@@ -183,6 +183,27 @@ span.highlight {
 /* ---------- MOBILE RESPONSIVE ---------- */
 @media (max-width: 768px){
 
+  /* Stack bio and photo vertically */
+  .biotable tr{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .biotable td{
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2.5% !important;
+  }
+
+  .photocell{
+    text-align: center;
+  }
+
+  .photocell img{
+    max-width: 200px;
+  }
+
   /* Make rows stack vertically */
   .pubtable tr{
     display: block;
@@ -195,17 +216,21 @@ span.highlight {
     padding: 6px 0;
   }
 
-  /* Make thumbnails larger */
-  .thumb{
+  /* Make thumbnails fill width on mobile */
+  .pubtable img{
     max-width: 100%;
+    height: auto;
   }
 
   .thumb-video{
     max-width: 100%;
   }
 
-  /* Slightly reduce large desktop font sizes */
+  /* Reduce font sizes for mobile */
+  body, td, th, tr, p, a{ font-size: 16px; }
+  strong{ font-size: 16px; }
+  .papertitle{ font-size: 16px; }
   .name{ font-size: 1.6rem; }
-  h2{ font-size: 1.3rem; }
+  h2{ font-size: 1.3rem; margin-top: 8px; }
 
 }
