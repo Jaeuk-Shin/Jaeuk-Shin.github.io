@@ -153,13 +153,14 @@ h2 {
   max-width: 320px;     /* controls visual size */
   height: auto;
   display: block;
-  border-radius: 12px;  /* optional polish */
+  border-radius: 6px;  /* optional polish */
 }
 
-.pubtable{
-  border-spacing: 0 18px;
-  border-collapse: separate;
+.pubtable tr{
+  background: #fafafa;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
+
 
 
 .fade {
@@ -177,4 +178,34 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px){
+
+  /* Make rows stack vertically */
+  .pubtable tr{
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  .pubtable td{
+    display: block;
+    width: 100% !important;
+    padding: 6px 0;
+  }
+
+  /* Make thumbnails larger */
+  .thumb{
+    max-width: 100%;
+  }
+
+  .thumb-video{
+    max-width: 100%;
+  }
+
+  /* Slightly reduce large desktop font sizes */
+  .name{ font-size: 1.6rem; }
+  h2{ font-size: 1.3rem; }
+
 }
