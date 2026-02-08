@@ -81,24 +81,24 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -110,19 +110,57 @@ h2 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 80%;
+  aspect-ratio: 1 / 1;     /* keeps it square like 160x160 did */
   position: relative;
+  overflow: hidden;        /* prevents overflow when using object-fit */
 }
 
 .two {
-  width: 160px;
-  height: 160px;
   position: absolute;
+  inset: 0;                /* top/right/bottom/left = 0 */
+  opacity: 0;
   transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
 }
+/* Keep table layout controlling ratios */
+.thumbcell{
+  width: 28%;
+  padding: 10px 12px 10px 0;
+  vertical-align: middle;
+}
+
+.textcell{
+  width: 72%;
+  padding: 10px 0 10px 12px;
+  vertical-align: middle;
+}
+
+/* Center content INSIDE cells */
+.cell-inner{
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  height: 100%;
+}
+
+/* text should remain left-aligned */
+.textcell .cell-inner{
+  justify-content: flex-start;
+}
+
+.thumb-video{
+  width: 100%;
+  max-width: 320px;     /* controls visual size */
+  height: auto;
+  display: block;
+  border-radius: 12px;  /* optional polish */
+}
+
+.pubtable{
+  border-spacing: 0 18px;
+  border-collapse: separate;
+}
+
 
 .fade {
   transition: opacity .2s ease-in-out;
