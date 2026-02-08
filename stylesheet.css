@@ -276,6 +276,8 @@ span.highlight {
   .pubtable tr{
     display: block;
     margin-bottom: 22px;
+    overflow: hidden;
+    padding: 12px 16px;
   }
 
   .pubtable td{
@@ -306,7 +308,7 @@ span.highlight {
 
   .pubtable .thumbcell,
   .pubtable .textcell{
-    padding: 10px 12px;
+    padding: 6px 0;
   }
 
 }
